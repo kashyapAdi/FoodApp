@@ -10,7 +10,7 @@ import Error from './components/Error';
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 // import Grocery from './components/Grocery';
 
-
+// clazy loading ,on demand loading we can say that
 const Grocery = lazy(() => import('./components/Grocery'));
 const AppLayout = () => {
     return (
