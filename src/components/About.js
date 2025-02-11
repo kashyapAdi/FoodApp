@@ -1,8 +1,8 @@
 const About = () => {
     return (
-        <div>
+        <div className="text-center text-2xl p-5 m-5 font-bold">
             <h1>About Us Page</h1>
-            <h2>This is Namaste React Web Series</h2>
+            <h2>Here Aditya sharma developer of this page</h2>
         </div>
     );
 };

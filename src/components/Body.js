@@ -11,7 +11,7 @@ const Body = () => {
 
 
     // whenever statte variable update , react trigger a reconsiliation cycle (re render the component )
-    console.log("body rendered");
+
 
     useEffect(() => {
         fetchData();
@@ -47,9 +47,9 @@ const Body = () => {
     return listOfRestaurants.length == 0 ? (
         <Shimmer />
     ) : (
-        <div className="body ">
-            <div className="filter flex">
-                <div className='search m-4 p-4 '>
+        <div className="body items-center gap-52 ">
+            <div className="filter flex  items-center">
+                <div className='search m-4 p-4  '>
                     <input type="text" placeholder="Search" className='search-box border border-solid border-black '
                         value={searchText}
                         onChange={(e) => {
@@ -69,7 +69,7 @@ const Body = () => {
                             }
 
                         }} />
-                    <button className="px-3 py-0.5 bg-green-500 m-4 text-white rounded-2xl "
+                    <button className="px-3 py-0.5 bg-green-500 m-4 text-white rounded-2xl"
                         onClick={() => {
                             console.log(searchText);
 
